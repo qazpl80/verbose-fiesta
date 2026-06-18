@@ -93,7 +93,7 @@ set "DST_F=%~2"
 
 if exist "%DST_F%" (
     echo.
-    set /p "YN=  [!] File already exists at destination. Overwrite? [Y/N]: "
+    set /p "YN=  [>>] File already exists at destination. Overwrite? [Y/N]: "
     if /i "!YN!" NEQ "Y" (
         echo  [SKIPPED]
         set /a SKIP+=1
@@ -125,7 +125,7 @@ set "DST_D=%~2"
 
 if exist "%DST_D%" (
     echo.
-    set /p "YN=  [!] Destination folder already exists. Overwrite contents? [Y/N]: "
+    set /p "YN=  [>>] Destination folder already exists. Overwrite contents? [Y/N]: "
     if /i "!YN!" NEQ "Y" (
         echo  [SKIPPED]
         set /a SKIP+=1
